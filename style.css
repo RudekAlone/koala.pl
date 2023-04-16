@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: system-ui;
+}
+body{
+    overflow-y: hidden;
+}
+h2{
+    font-size: 18px;
+}
+header{
+    
+    height: 40px;
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    margin: auto;
+}
+h1:hover{
+    cursor: pointer;
+    color: #a9a9a9;
+}
+#Menu::before{
+    font-size: 25px;
+    
+}
+#Menu:hover{
+    cursor: pointer;
+    color: #a9a9a9;
+}
+#NotMobileText{
+    display: inline;
+}
+
+.topic-sidebar{
+    width: 300px;
+    padding: 10px;
+    height: calc(100vh - 80px);
+    background-color: #d1ccc1;
+    overflow-y: auto;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+}
+.topic-sidebar-close{
+    width: 0px;
+    padding: 0px;
+}
+
+#tittle-course{
+    min-height: fit-content;
+    height: fit-content;
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    padding: 10px;
+    margin: -10px -10px 5px -10px;
+    position: sticky;
+    top: -10px;
+}
+#complete-progressbar{
+    height: 5px;
+    width: 100%;
+}
+#progressbar-complete-label{
+    font-size: 12px;
+}
+.topic{
+    margin: 5px;
+    border: 2px dashed #888;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+
+}
+.RightLessIcon{
+    display: block;
+    height: 15px;
+    min-width: 15px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="512" height="512"><path d="M24,5V19a5.006,5.006,0,0,1-5,5H5a5.006,5.006,0,0,1-5-5V5A5.006,5.006,0,0,1,5,0H19A5.006,5.006,0,0,1,24,5ZM2,19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V5a3,3,0,0,0-3-3H5A3,3,0,0,0,2,5Zm14-7a2.993,2.993,0,0,1-.752,1.987c-.291.327-.574.637-.777.84L11.647,17.7a1,1,0,1,1-1.426-1.4L13.05,13.42c.187-.188.441-.468.7-.759a1,1,0,0,0,0-1.323c-.258-.29-.512-.57-.693-.752L10.221,7.7a1,1,0,1,1,1.426-1.4l2.829,2.879c.2.2.48.507.769.833A2.99,2.99,0,0,1,16,12Z"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.topic:hover{
+    cursor: pointer;
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14.5px;
+}
+.topic:hover > .RightLessIcon{
+    background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="512" height="512"><path d="M0,5V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V5a5.006,5.006,0,0,0-5-5H5A5.006,5.006,0,0,0,0,5Zm16,7a2.993,2.993,0,0,1-.752,1.987c-.291.327-.574.637-.777.84L11.647,17.7a1,1,0,1,1-1.426-1.4L13.05,13.42c.187-.188.441-.468.7-.759a1,1,0,0,0,0-1.323c-.258-.29-.512-.57-.693-.752L10.221,7.7a1,1,0,1,1,1.426-1.4l2.829,2.879c.2.2.48.507.769.833A2.99,2.99,0,0,1,16,12Z"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#lesson-contener{
+    height: calc(100vh - 80px);
+    background-color: #c2bcb1;
+    overflow-y: auto;
+    padding: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c2bcb1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+#lesson-content{
+    width: 60%;
+    margin: auto;
+    background-color: #ddd8ce;
+    padding: 10px;
+}
+#lesson-content > img{
+    display: block;
+    margin: 25px auto;
+    border: 2px solid #555;
+}
+#lesson-content> .fiFtiIMG > img{
+    height: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 2px solid #555;
+    position: relative;
+    top: 10px;
+}
+
+  @media(max-width: 400px) {
+    #lesson-content{
+        min-width: 90%;
+    }
+    .NotMobileText{
+        display: none;
+        color: aqua;
+    }
+  }

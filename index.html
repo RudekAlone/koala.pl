@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <span id="Menu" onclick="openNav()"
+        >&#9776; <span class="NotMobileText">Menu</span></span
+      >
+      <h1>KoalaPL.GitHub.io</h1>
+    </header>
+    <main>
+      <div class="topic-sidebar" data-overview-sidebar="true">
+        <div id="tittle-course">
+          <h2>SYSTEMY OPERACYJNE I ADMINISTRACJA NIMI</h2>
+
+          <progress id="complete-progressbar" max="100" value="70">
+            70%
+          </progress>
+          <label id="progressbar-complete-label" for="complete-progressbar"
+            >Poczyniony progres:
+          </label>
+        </div>
+        <details open>
+          <summary>WINDOWS SERWER</summary>
+          <ul>
+            <li class="topic" id="aso1">
+              <span class="RightLessIcon"></span>
+              Konfiguracja w VirtualBox
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Interfejs sieciowy
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Active Directory (AD)
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>(AD) użytkownicy
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>(AD) profile mobilne i udziały
+              sieciowe
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>(AD) zasady grupy
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Dynamiczna konfiguracja hostów
+              (DHCP)
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Serwer Web www /part 1 - DNS
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Serwer Web www /part 2 - IIS
+            </li>
+          </ul>
+        </details>
+        <details open>
+          <summary>LINUX SERWER</summary>
+          <ul>
+            <li class="topic">
+              <span class="RightLessIcon"></span>
+              Połączenie SSH i konfiguracja interfesów sieciowych netplan
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>
+              Serwer plików (FTP) / udziały sieciowe - samba
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>
+              Dynamiczna konfiguracja hostów (DHCP) - isc-dhcp-server
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Serwer Web www /part 1 -
+              apache2
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Serwer Web www /part 2 - php
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Serwer Web www /part 3 - mysql
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Dynamiczna konfiguracja hostów
+              (DHCP)
+            </li>
+            <li class="topic">
+              <span class="RightLessIcon"></span>Serwer Web www /part 4 - DNS
+            </li>
+          </ul>
+        </details>
+      </div>
+      <div id="lesson-contener" data-overview-sidebar="true">
+        <div id="lesson-content"></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="script.js"></script>
+</html>
